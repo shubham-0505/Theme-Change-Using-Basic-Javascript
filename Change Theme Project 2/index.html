@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Click on button below to change theme of below image</h1>
+    <img src="./images/light_mode.png" alt="light mode" id="colormodel">
+    <button id="btn">Click for Dark Mode</button>
+    <script>
+        let button = document.getElementById('btn')
+        let colormodel = document.getElementById('colormodel')
+        btn.addEventListener('click' , changeTheme)
+
+        function changeTheme(e){
+            if(button.textContent.includes('Click for Light Mode')){
+                colormodel.src = "./images/light_mode.png"
+                button.textContent = "Click for Dark Mode"
+            }
+            else{
+                colormodel.src = "./images/dark_mode.png"
+                button.textContent = "Click for Light Mode"
+            }
+        }
+    </script>
+</body>
+</html>
