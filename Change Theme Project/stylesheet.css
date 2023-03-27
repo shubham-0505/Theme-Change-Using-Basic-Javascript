@@ -1,0 +1,25 @@
+h1{
+    font-size:2.4rem;
+    font-family:'Poppins';
+    color:black;
+    text-align:center;
+}
+#theme{
+    display:flex;
+    margin:auto;
+    height:12cm;
+}
+button{
+    padding:12px 16px;
+    display:flex;
+    margin:auto;
+    border:2px solid black;
+    font-family:'Poppins';
+    font-size:1rem;
+    /* font-weight:bold; */
+    background-color: lightcyan;
+}
+button:hover{
+    background-color:aqua;
+    cursor:pointer;
+}

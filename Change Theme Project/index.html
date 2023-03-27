@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Farro:wght@300&family=Grenze&family=Lobster&family=Montserrat&family=Noto+Sans:wght@700&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Quintessential&family=Rowdies:wght@300&family=Staatliches&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Click on the button below to change theme of the image</h1>
+    <img src="./images/light_mode.png" alt="light mode image" id="theme">
+    <button id="btn1">Change to Dark mode</button>
+    <script>
+        let button = document.getElementById('btn1')
+        let theme = document.getElementById('theme')
+        btn1.addEventListener('click' , changeImage)
+
+        function changeImage(e){
+            if(button.textContent.includes("Change to Light mode")){
+                theme.src = "./images/light_mode.png"
+                button.textContent = "Change to Dark mode"
+            }
+            else{
+                theme.src = "./images/dark_mode.png"
+                button.textContent = "Change to Light mode"
+            }
+        }
+    </script>
+</body>
+</html>
