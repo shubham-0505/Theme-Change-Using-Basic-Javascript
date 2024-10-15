@@ -1,1 +1,1 @@
-Simple Projects on Theme Change using Basic Javascript
+Theme Change using Vanilla Javascript
